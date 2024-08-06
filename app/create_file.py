@@ -33,6 +33,7 @@ def main(args: list[str]) -> None:
         while (line := input("Enter content line: ")) != "stop":
             file.write(f"{line_counter} {line}\n")
             line_counter += 1
+        file.write("\n")
 
 
 if __name__ == "__main__":
